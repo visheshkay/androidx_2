@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    >
+
+    <ImageView
+        android:id="@+id/image_project_card"
+        android:layout_width="76dp"
+        android:layout_height="79dp"
+        android:layout_margin="5dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/title_project_card"
+        android:layout_width="222dp"
+        android:layout_height="38dp"
+        android:paddingTop="10px"
+        android:textAlignment="textEnd"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Title" />
+
+    <TextView
+        android:id="@+id/desc_project_card"
+        android:layout_width="224dp"
+        android:layout_height="44dp"
+        android:textAlignment="textEnd"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_project_card"
+        tools:text="This is a breif description about the project which is to be placed" />
+
+    <TextView
+        android:id="@+id/link_project_card"
+        android:layout_width="224dp"
+        android:layout_height="22dp"
+        android:autoLink="web"
+        android:textAlignment="textEnd"
+        android:textColorLink="#00178D"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/desc_project_card"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="https://github.com" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2sp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="133dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
